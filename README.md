@@ -8,6 +8,9 @@ Questions? Please visit the [Support Forum](https://github.com/makerspet/support
 - Docker Hub [image](https://hub.docker.com/r/kaiaai/kaiaai)
   - `docker pull kaiaai/kaiaai:humble`
   - `docker pull kaiaai/kaiaai:iron`
+ 
+## Launch
+- `docker run --name makerspet -it --rm -p 8888:8888/udp -p 4430:4430/tcp -e DISPLAY=host.docker.internal:0.0 -e LIBGL_ALWAYS_INDIRECT=0 kaiaai/kaiaai:iron`
 
 ## Docker setup video (outdated)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=XOc5kCE3MC0" target="_blank">
